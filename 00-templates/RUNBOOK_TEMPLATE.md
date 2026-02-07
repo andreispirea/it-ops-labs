@@ -313,6 +313,7 @@ Check 2: [Another verification]
 - [ ] Note any new failure modes discovered
 
 ---
+## Related Documentation
 **Related runbooks:**
 - [RB-XXX-related-procedure]
 
@@ -385,6 +386,5 @@ Check 2: [Another verification]
 
 **Time to complete:** [Estimated duration]
 
-## Related Documentation
 
 
