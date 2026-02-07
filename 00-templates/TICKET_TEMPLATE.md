@@ -1,243 +1,232 @@
-# Ticket #[CASE-NUMBER] - [Brief Descriptive Title]
+# Incident Ticket: [SHORT_DESCRIPTIVE_TITLE]
 
-## Ticket Information
-- **Ticket ID**: CASE-[XXX]-[descriptive-name]
-- **Date**: YYYY-MM-DD
-- **Severity**: [Critical | High | Medium | Low]
-- **Status**: [Open | In Progress | Resolved | Closed]
-- **Category**: [Windows | Linux | Network | Identity/Access | Other]
-- **Assigned To**: [Your Name]
-- **Time to Resolve**: [X hours/minutes]
+## Ticket Metadata
+| Field | Value |
+|-------|-------|
+| **Ticket ID** | CASE-XXX-[description] |
+| **Date Opened** | YYYY-MM-DD HH:MM |
+| **Date Resolved** | YYYY-MM-DD HH:MM |
+| **Severity** | Critical / High / Medium / Low |
+| **Status** | Open / In Progress / Resolved / Closed |
+| **Assigned To** | [Your Name / Team] |
+| **Category** | Windows / Linux / Network / Identity / Application |
 
 ---
 
 ## Issue Summary
-<!-- 2-3 sentence executive summary of the problem -->
-[Clear, concise description of what broke and the business impact]
+**One-line description of what broke and the impact**
+
+Example: "Internal users unable to resolve company domain names - DNS server unreachable"
 
 ---
 
 ## Reported Symptoms
-<!-- What the user/system reported initially -->
-- **User Report**: [What was reported by end user or monitoring]
-- **Affected System(s)**: [Hostname, IP, or service name]
-- **Impact Scope**: [Number of users affected / services down]
-- **Business Impact**: [How this affects operations]
+**What the user/system reported — be specific, use exact error messages**
 
-**Observable Behavior**:
-- [Symptom 1]
-- [Symptom 2]
-- [Symptom 3]
+- Error message: `[exact text or screenshot reference]`
+- When it started: [timestamp or "approximately X hours ago"]
+- Affected users/systems: [scope]
+- What works: [things that still function]
+- What doesn't work: [specific failures]
+
+**Evidence artifacts:**
+- Screenshot: `artifacts/screenshot-001-error-message.png`
+- Log snippet: `artifacts/error-log-extract.txt`
 
 ---
 
-## Environment Details
-<!-- Critical context about the affected system -->
-- **Operating System**: [Windows 11 / Ubuntu 22.04 / etc.]
-- **Hostname/IP**: [computer-name / 192.168.1.100]
-- **Domain/Network**: [CORP.LOCAL / VLAN 10 / etc.]
-- **Related Services**: [Service names, dependencies]
-- **Recent Changes**: [Any known changes in last 72h]
+## Impact Assessment
+**Business/operational impact**
+
+| Impact Area | Details |
+|-------------|---------|
+| **Users Affected** | [number] users / [specific team/department] |
+| **Systems Affected** | [hostnames or service names] |
+| **Business Impact** | [can't access email / can't reach internal apps / productivity stopped] |
+| **Workaround Available?** | Yes / No — [describe if yes] |
 
 ---
 
 ## Initial Triage
-<!-- Your first investigation steps -->
+**First observations and quick checks**
 
-**Expected Behavior**:
-- [What should be happening normally]
+**Environment:**
+- System: [hostname or IP]
+- OS: [Windows 11 / Ubuntu 22.04 / etc.]
+- Network segment: [VLAN / subnet if relevant]
 
-**Observed Behavior**:
-- [What is actually happening - be specific]
-
-**Difference/Gap**:
-- [Clear statement of the deviation]
-
----
-
-## Investigation & Troubleshooting
-
-### Hypothesis 1: [First Theory]
-**Test Performed**:
-```
-[Command or test procedure]
-```
-
-**Output**:
-```
-[Actual command output or screenshot reference]
-```
-
-**Result**: ✓ Confirmed / ✗ Ruled Out  
-**Evidence**: [artifacts/screenshot-01.png]
+**Quick checks performed:**
+1. [Basic connectivity test - result]
+2. [Service status check - result]
+3. [Log review - result]
 
 ---
 
-### Hypothesis 2: [Second Theory]
-**Test Performed**:
+## Troubleshooting Steps
+
+### Hypothesis 1: [What you thought might be wrong]
+**Test performed:**
 ```
-[Command or test procedure]
+[command or test]
 ```
 
-**Output**:
+**Result:**
 ```
-[Actual command output or screenshot reference]
+[output or observation]
 ```
 
-**Result**: ✓ Confirmed / ✗ Ruled Out  
-**Evidence**: [artifacts/screenshot-02.png]
+**Conclusion:** ✅ Confirmed / ❌ Ruled out
 
 ---
 
-### Root Cause Identified
-**Finding**: [Clear statement of what was broken]
+### Hypothesis 2: [Next theory]
+**Test performed:**
+```
+[command or test]
+```
 
-**Evidence**:
-- [Log entry, error message, or config showing the problem]
-- [Reference to artifacts/evidence-file]
+**Result:**
+```
+[output or observation]
+```
 
-**Why This Occurred**: [Technical explanation of the failure mechanism]
+**Conclusion:** ✅ Confirmed / ❌ Ruled out
 
 ---
 
-## Resolution Steps
-
-### Fix Applied
-```bash
-# Step 1: [Description]
-[command-or-action]
-
-# Step 2: [Description]
-[command-or-action]
-
-# Step 3: [Description]
-[command-or-action]
+### Hypothesis 3: [If needed]
+**Test performed:**
+```
+[command or test]
 ```
 
-**Configuration Changes**:
-- File: `[/path/to/config]`
-- Changed: `[old-value]` → `[new-value]`
-- Reason: [Why this specific change]
+**Result:**
+```
+[output or observation]
+```
+
+**Conclusion:** ✅ Confirmed / ❌ Ruled out
+
+---
+
+## Root Cause
+**What actually caused the failure — be specific**
+
+[Clear technical explanation]
+
+**Evidence:**
+- Log entry: `artifacts/root-cause-log.txt`
+- Config file: `artifacts/misconfigured-setting.png`
+- Command output proving root cause: `artifacts/proof.txt`
+
+---
+
+## Resolution
+**What you did to fix it**
+
+**Steps taken:**
+1. [Command or action]
+   ```
+   [exact command if applicable]
+   ```
+2. [Next action]
+3. [Final action]
+
+**Configuration changes:**
+- File: `[path]`
+- Change: [before → after]
+
+**Services restarted:**
+- [service name]
 
 ---
 
 ## Verification
-<!-- Prove the fix worked -->
+**How you confirmed the fix worked**
 
-**Test 1**: [Verification step]
+**Test 1:** [What you tested]
 ```
-[Command to verify]
+[command]
 ```
-**Result**: ✓ Pass  
-**Evidence**: [artifacts/verification-01.png]
+**Result:** ✅ Working as expected
 
-**Test 2**: [Additional verification]
+**Test 2:** [Additional verification]
 ```
-[Command to verify]
+[command]
 ```
-**Result**: ✓ Pass  
-**Evidence**: [artifacts/verification-02.png]
+**Result:** ✅ Confirmed
 
-**User Confirmation**: [User tested and confirmed working - Date/Time]
+**User confirmation:**
+- [User tested and confirmed working: Yes/No]
+- [Screenshot of successful operation: `artifacts/verification.png`]
 
 ---
 
-## Prevention & Future Mitigation
+## Prevention & Follow-up
 
-### Immediate Prevention
-- [Action taken to prevent immediate recurrence]
+**Immediate prevention:**
+- [What you did to prevent recurrence - monitoring alert / config change / documentation]
 
-### Long-term Prevention
-- **Monitoring**: [What to monitor to catch this early]
-- **Automation**: [Script or check to prevent/detect]
-- **Documentation**: [Runbook reference: /runbooks/runbook-XXX.md]
-- **Configuration Standard**: [What should be the standard going forward]
+**Long-term recommendations:**
+- [ ] [Monitoring improvement]
+- [ ] [Configuration standardization]
+- [ ] [Documentation update - link to runbook if created]
+- [ ] [Training need identified]
 
-### Recommended Actions
-1. [Action 1 - who should do it]
-2. [Action 2 - when it should happen]
-3. [Action 3 - what needs approval]
+**Runbook created:** [Link to runbook if this is a recurring pattern]
 
 ---
 
-## Knowledge Base
-<!-- Make this findable for others -->
+## Lessons Learned
 
-**Related Tickets**: [CASE-XXX, CASE-YYY]  
-**Related Runbooks**: [/runbooks/runbook-XXX.md]  
-**Keywords**: [DNS, firewall, service-failure, permissions, etc.]
+**What went well:**
+- [Detection method worked / quick isolation / etc.]
 
----
+**What could improve:**
+- [Earlier detection needed / documentation gap / etc.]
 
-## Artifacts & Evidence
-<!-- All supporting files referenced above -->
-
-```
-/artifacts/
-├── screenshot-01-initial-error.png
-├── screenshot-02-event-viewer.png
-├── screenshot-03-verification.png
-├── eventlog-export.txt
-├── command-output.txt
-└── config-before-after.txt
-```
-
----
-
-## Timeline
-<!-- Helpful for postmortems and learning -->
-
-| Time | Event | Action Taken |
-|------|-------|--------------|
-| 09:15 | Issue reported | Ticket created |
-| 09:20 | Triage started | Checked service status |
-| 09:25 | Root cause found | Identified DNS misconfiguration |
-| 09:30 | Fix applied | Updated DNS settings |
-| 09:35 | Verified | User confirmed resolution |
-| 09:40 | Documented | Created runbook |
-
-**Total Resolution Time**: [XX minutes]
-
----
-
-## Notes & Lessons Learned
-<!-- Your reflection - this shows growth mindset -->
-
-**What Worked Well**:
-- [Systematic approach paid off]
-- [Tool X helped identify the issue quickly]
-
-**What Could Be Improved**:
-- [Could have checked Y first to save time]
-- [Need better monitoring for this scenario]
-
-**Skills Applied**:
-- [Event Viewer filtering]
-- [DNS troubleshooting]
-- [Service dependency analysis]
-
-**New Knowledge Gained**:
-- [Specific technical insight from this case]
+**New knowledge:**
+- [Technical insight gained from this incident]
 
 ---
 
 ## Escalation Notes
-<!-- Only if you escalated - shows good judgment -->
+**If you had to escalate or collaborate**
 
-**Would Escalate If**:
-- [Scenario requiring senior engineer]
-- [Scenario requiring vendor support]
-
-**Information to Provide on Escalation**:
-- This ticket (full investigation history)
-- All artifacts in /artifacts/
-- Tests already ruled out: [X, Y, Z]
-- Current hypothesis: [Your best theory]
+- **Escalated to:** [Team / Person]
+- **What you provided:** [Evidence / tests performed / what you ruled out]
+- **What you needed:** [Specific help requested]
+- **Outcome:** [How escalation helped resolve]
 
 ---
 
-## Sign-off
-- **Resolved By**: [Your Name]
-- **Reviewed By**: [Reviewer name - or self if lab]
-- **Date Closed**: YYYY-MM-DD
-- **Disposition**: [Resolved - Root cause fixed and verified]
+## Attachments / Artifacts
+**All evidence referenced above**
+
+- `artifacts/screenshot-001-error-message.png` — [description]
+- `artifacts/config-before.txt` — [description]
+- `artifacts/config-after.txt` — [description]
+- `artifacts/verification-output.txt` — [description]
+- `artifacts/[name].pcap` — [packet capture if network issue]
+
+---
+
+## Related Documentation
+- Runbook: `[link if created]`
+- Related tickets: `[CASE-XXX if applicable]`
+- Vendor KB: `[link if used]`
+- Internal wiki: `[link if updated]`
+
+---
+
+## Timeline
+| Time | Event |
+|------|-------|
+| HH:MM | Issue reported |
+| HH:MM | Triage started |
+| HH:MM | Root cause identified |
+| HH:MM | Fix applied |
+| HH:MM | Verification completed |
+| HH:MM | Ticket closed |
+
+**Total resolution time:** [X hours / X minutes]
