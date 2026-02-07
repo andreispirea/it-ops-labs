@@ -327,8 +327,8 @@ Check 2: [Another verification]
 - [Path to relevant scripts]
 
 ---
-
-
+## Notes & Tips
+**Time to complete:** [Estimated duration]
 **Best practices:**
 - 💡 [Operational tip]
 - 💡 [Common optimization]
@@ -382,9 +382,9 @@ Check 2: [Another verification]
 
 ### Appendix D: Screenshots (if helpful)
 - `artifacts/step-3-expected-output.png`
-- `artifacts/verification-success.png`## Notes & Tips
+- `artifacts/verification-success.png`
 
-**Time to complete:** [Estimated duration]
+
 
 
 
