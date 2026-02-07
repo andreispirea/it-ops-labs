@@ -246,6 +246,8 @@ Check 2: [Another verification]
 
 ---
 
+### Issue 2: [Another common problem]
+**Symptom:** [What you see]  
 **Cause:** [Why it happens]  
 **Resolution:** [How to fix]
 
@@ -258,13 +260,24 @@ Check 2: [Another verification]
 
 ---
 
-Problem still exists after procedure?
-├─ Yes → Check verification tests failed?
-│   ├─ Test 1 failed → [Specific troubleshooting path]
-│   ├─ Test 2 failed → [Specific troubleshooting path]
-│   └─ Test 3 failed → [Specific troubleshooting path]
-└─ No → Document success, close ticket
-```
+## Troubleshooting Decision Tree
+
+**If problem still exists after procedure:**
+
+1. **Check which verification test failed:**
+   - **Test 1 failed** → [Specific troubleshooting path]
+   - **Test 2 failed** → [Specific troubleshooting path]  
+   - **Test 3 failed** → [Specific troubleshooting path]
+
+2. **If all tests pass but problem persists:**
+   - Re-verify symptoms match this runbook's scope
+   - Check for additional issues not covered here
+   - See escalation criteria below
+
+3. **If tests pass and problem is resolved:**
+   - Document success in ticket
+   - Complete post-procedure actions
+   - Close ticket
 
 ---
 
@@ -288,7 +301,6 @@ Problem still exists after procedure?
 ## Post-Procedure Actions
 
 **Immediate:**
-- [ ] Document procedure completion in ticket
 - [ ] Verify monitoring is showing healthy state
 - [ ] Notify affected users/teams
 
@@ -301,9 +313,6 @@ Problem still exists after procedure?
 - [ ] Note any new failure modes discovered
 
 ---
-
-## Related Documentation
-
 **Related runbooks:**
 - [RB-XXX-related-procedure]
 
@@ -318,9 +327,6 @@ Problem still exists after procedure?
 
 ---
 
-## Notes & Tips
-
-**Time to complete:** [Estimated duration]
 
 **Best practices:**
 - 💡 [Operational tip]
@@ -375,10 +381,10 @@ Problem still exists after procedure?
 
 ### Appendix D: Screenshots (if helpful)
 - `artifacts/step-3-expected-output.png`
-- `artifacts/verification-success.png`## Troubleshooting Decision Tree
+- `artifacts/verification-success.png`## Notes & Tips
 
-```
+**Time to complete:** [Estimated duration]
 
-
+## Related Documentation
 
 
