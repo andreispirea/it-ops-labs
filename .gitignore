@@ -1,0 +1,39 @@
+# VM files
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.vmx
+*.ovf
+*.ova
+
+# ISOs
+*.iso
+
+# Large logs
+*.log
+*.pcap
+*.pcapng
+
+# Credentials (even test ones)
+*credentials*
+*password*
+*secret*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# But DO commit small artifacts
+!artifacts/*.png
+!artifacts/*.jpg
+!artifacts/*.txt
+!artifacts/*.json
