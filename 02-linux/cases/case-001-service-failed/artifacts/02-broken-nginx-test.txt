@@ -1,0 +1,2 @@
+2026/02/14 21:28:36 [emerg] 27683#27683: invalid number of arguments in "user" directive in /etc/nginx/nginx.conf:2
+nginx: configuration file /etc/nginx/nginx.conf test failed
