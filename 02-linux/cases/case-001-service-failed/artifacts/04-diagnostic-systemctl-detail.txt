@@ -1,0 +1,14 @@
+× nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Sat 2026-02-14 21:25:55 UTC; 51min ago
+   Duration: 1h 12min 41.449s
+       Docs: man:nginx(8)
+    Process: 27672 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=1/FAILURE)
+        CPU: 3ms
+
+Feb 14 21:25:55 ubu-srv systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Feb 14 21:25:55 ubu-srv nginx[27672]: 2026/02/14 21:25:55 [emerg] 27672#27672: invalid number of arguments in "user" directive in /etc/nginx/nginx.conf:2
+Feb 14 21:25:55 ubu-srv nginx[27672]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Feb 14 21:25:55 ubu-srv systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+Feb 14 21:25:55 ubu-srv systemd[1]: nginx.service: Failed with result 'exit-code'.
+Feb 14 21:25:55 ubu-srv systemd[1]: Failed to start nginx.service - A high performance web server and a reverse proxy server.
