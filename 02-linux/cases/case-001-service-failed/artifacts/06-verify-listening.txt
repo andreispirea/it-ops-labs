@@ -1,0 +1,2 @@
+LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=28002,fd=5),("nginx",pid=28000,fd=5),("nginx",pid=27999,fd=5))
+LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=28002,fd=6),("nginx",pid=28000,fd=6),("nginx",pid=27999,fd=6))
