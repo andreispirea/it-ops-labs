@@ -1,12 +1,24 @@
-# Lab Baseline v1.0
-
-## Current Setup (Week 1)
+# Lab Baseline 
 
 ### Hypervisor
 - **Platform:** Oracle VirtualBox 7.2.4
 - **Host OS:** Windows 11
 
 ### Virtual Machines
+
+| VM | Hostname | IP (host-only) | Role |
+|---|---|---|---|
+| Windows Server 2022 | LAB-DC01 | 192.168.56.30 | DC, DNS |
+| Windows 11 | LAB-W1-WIN11 | 192.168.56.10 | Domain client |
+| Ubuntu Server | LAB-W1-UBU-SRV | 192.168.56.20 | Linux server |
+
+**LAB-DC01** (Windows Server 2022)
+- OS: Windows Server 2022
+- RAM: 6GB
+- CPUs: 2
+- Disk: 60GB
+- Network: Intel PRO/1000 MT Desktop (NAT Network, Host-Only)
+- Purpose: DC
 
 **LAB-W1-WIN11** (Windows 11 Client)
 - OS: Windows 11 (64-bit)
@@ -31,12 +43,5 @@
 - **DHCP:** Enabled via VirtualBox DHCP server
 
 **Limitations of current setup:**
-- No internal DNS server (relies on host DNS)
 - No internal DHCP server (VirtualBox DHCP only)
 - No routing between VLANs (not configured yet)
-- No AD domain
-
-**What this supports:**
-- Windows client troubleshooting (DNS cache, network config)
-- Linux service/log troubleshooting
-- Basic networking (connectivity, gateway, DNS client issues)
